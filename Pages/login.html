@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Login Screen</title>
+</head>
+
+<style>
+    h1, form, p{
+        color: white;
+        font-family: courier;
+    }
+
+    .center {
+        text-align: center;
+        border: 3px solid gray;
+        width: 500px;
+        position: relative;
+        margin: auto;
+        text-align: center;
+        top: 100px;
+        width: 30%;
+    }
+</style>
+<body style="background-color:  skyblue">
+<div class="center">
+    <br>
+    <br>
+    <h1>Bienvenido!</h1>
+    <p> Por favor, ingrese sus datos.</p>
+    <form method="GET" action="controlador.php">
+        Usuario: <input type="text" name="userName" id="userN" required><br><br>
+
+        Clave  :   <input type="password" name="pass" id="password" required><br><br>
+        <input type="submit" value="Entrar"><br><br><br>
+    </form>
+</div>
+</body>
+</html>

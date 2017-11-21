@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Nov 20, 2017, 8:14:46 PM
+    Author     : eduardobenitez
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+th {
+    color: azure;
+    background-color: cornflowerblue;
+    width: 3%;
+}
+
+td {
+    text-align: center;
+}
+
+#botonSalir {
+    color: darkslategray;
+}
+
+table {
+    border: solid;
+    border-color: black;
+
+}
+
+#main {
+    padding-left: 270px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: courier;
+    height: 60px;
+    width: 100%;
+    background: #5c85d6;
+    line-height: 60px;
+    color: white;
+    padding-left: 30px;
+}
+
+h2 {
+    font-family: courier;
+    height: 60px;
+    width: 100%;
+    color: skyblue;
+}
+
+nav {
+    width: 250px;
+    height: 666px;
+    background: skyblue;
+    position: absolute;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: block;
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: 1px solid gray;
+    font-family: courier;
+    color: white;
+}
+
+nav ul li:hover {
+    background: white;
+    transition: linear all 0.40s;
+    margin-left: 10px;
+    color: #5c85d6;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.selected {
+    background: white;
+}
+
+.selected a {
+    color: black;
+}
