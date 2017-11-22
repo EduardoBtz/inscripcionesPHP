@@ -4,6 +4,7 @@
     <title>Maestros</title>
     <meta charset="UTF-8">
     <link href="NavigationStyle.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="modificacion.js"></script>
 </head>
 
 <body>
@@ -21,13 +22,14 @@
 
 <div id="main">
     <h2>Lista de maestros</h2>
-    <table>
+    <table id="tabla-maestros">
         <tr>
-            <th>Nomina</th>
+            <th>Nómina</th>
             <th>Nombre</th>
-            <th>Telefono</th>
+            <th>Teléfono</th>
             <th>#Cursos</th>
             <th>Email</th>
+            <th style="color: darkred;">Borrar?</th>
         </tr>
         <?php
 
@@ -41,17 +43,19 @@
         $count = mysqli_num_rows($result);
 
         while($row = mysqli_fetch_array($result)) {
-            echo
-                "<tr>
-                <td>".$row['nomina']."</td>
-                <td>".$row['nombre']."</td>
-                <td>".$row['telefono']."</td>
-                <td>".$row['email']."</td>
-                <td>".$row['cant_cursos']."</td>
+            $activeNomina = $row['nomina'];
+            echo "<tr>
+                <td id='$activeNomina'>".$row['nomina']."</td>
+                <td id='$activeNomina'>".$row['nombre']."</td>
+                <td id='$activeNomina'>".$row['telefono']."</td>
+                <td id='$activeNomina'>".$row['email']."</td>
+                <td id='$activeNomina'>".$row['cant_cursos']."</td>
+                <td><button id='$activeNomina' onclick='ajax_borrar(this)'>Borrar </button></td>
             </tr>";
         }
         ?>
     </table><br>
+    <button onclick='ajax_agregar()'>Agregar nuevo maestro</button>
 </div>
 
 </body>

@@ -4,6 +4,7 @@
     <title>Materias</title>
     <meta charset="UTF-8">
     <link href="NavigationStyle.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="modificacion.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,7 @@
             <th>Clave</th>
             <th>Nombre</th>
             <th>Horas lab</th>
+            <th style="color: darkred;">Borrar?</th>
         </tr>
         <?php
 
@@ -39,11 +41,13 @@
         $count = mysqli_num_rows($result);
 
         while($row = mysqli_fetch_array($result)) {
+            $activeClave = $row['clave'];
             echo
                 "<tr>
                 <td>".$row['clave']."</td>
                 <td>".$row['nombre']."</td>
                 <td>".$row['hrsLab']."</td>
+                <td><button id='$activeClave' onclick='ajax_borrar(this)'>Borrar </button></td>
             </tr>";
         }
         ?>

@@ -21,6 +21,7 @@ th {
 
 td {
     text-align: center;
+
 }
 
 #botonSalir {
@@ -30,6 +31,7 @@ td {
 table {
     border: solid;
     border-color: black;
+    position: relative;
 
 }
 
@@ -60,6 +62,7 @@ nav {
     height: 666px;
     background: skyblue;
     position: absolute;
+
 }
 
 nav a{
