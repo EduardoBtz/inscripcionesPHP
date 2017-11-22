@@ -26,10 +26,8 @@ if($hacer == "actualizar") {
     $nomina = "nomina";
     $nombre = "nombre";
     $telefono = "telefono";
-    $noCursos = int("0");
+    $noCursos = 0;
     $email = "email";
-
-
 
     $sql = "INSERT INTO maestros (nomina, nombre, telefono, email, cant_cursos, responsabilidad) VALUES ('$nomina', '$nombre', '$telefono', '$noCursos', '$email', NULL);";
     $result = mysqli_query($db, $sql);

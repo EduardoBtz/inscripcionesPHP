@@ -45,11 +45,11 @@
         while($row = mysqli_fetch_array($result)) {
             $activeNomina = $row['nomina'];
             echo "<tr>
-                <td id='$activeNomina'>".$row['nomina']."</td>
-                <td id='$activeNomina'>".$row['nombre']."</td>
-                <td id='$activeNomina'>".$row['telefono']."</td>
-                <td id='$activeNomina'>".$row['email']."</td>
-                <td id='$activeNomina'>".$row['cant_cursos']."</td>
+                <td id='$activeNomina' class='celda' ondblclick='ajax_post(this)'>".$row['nomina']."</td>
+                <td id='$activeNomina' class='celda' ondblclick='ajax_post(this)'>".$row['nombre']."</td>
+                <td id='$activeNomina' class='celda' ondblclick='ajax_post(this)'>".$row['telefono']."</td>
+                <td id='$activeNomina' class='celda' ondblclick='ajax_post(this)'>".$row['email']."</td>
+                <td id='$activeNomina' class='celda' ondblclick='ajax_post(this)'>".$row['cant_cursos']."</td>
                 <td><button id='$activeNomina' onclick='ajax_borrar(this)'>Borrar </button></td>
             </tr>";
         }

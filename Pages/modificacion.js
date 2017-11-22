@@ -150,7 +150,7 @@ function ajax_agregar() {
     var sender = "hacer="+adder+"&id="+id;
 
     var cell1 = row.insertCell(0);
-    cell1.id = "nombre-"+rowCount;
+    cell1.id = "nomina";
     cell1.className = "celda";
     cell1.setAttribute("ondblclick", "modificar(this)");
     cell1.innerHTML = "nomina";
